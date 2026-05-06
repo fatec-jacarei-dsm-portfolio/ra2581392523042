@@ -1,0 +1,61 @@
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: black;
+
+  h2 {
+    color: #FFA500;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1000px;
+      height: 3px;
+      margin: 0.5rem auto 0;
+      background: linear-gradient(90deg, #FFA500);
+    }
+  }
+
+  p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #fbfbfc;
+    font-size: 1.2rem;
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    a {
+      color: #fff;
+      border: 1px solid #008080;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; // espaço entre ícone e texto
+      text-decoration: none; // 🔥 remove o sublinhado
+
+      i {
+        font-size: 1.2rem;
+        color: #008080;
+      }
+
+      &:hover {
+        background: #6c63ff;
+        color: #fff;
+
+        i {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
